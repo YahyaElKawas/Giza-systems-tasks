@@ -1,0 +1,34 @@
+.parent {
+    text-align: center;
+    height: 100lh;
+    background-color: rgb(232, 233, 235);
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+}
+
+.card span {
+    margin-bottom: 5px;
+}
+
+.card input {
+    margin-bottom: 5px;
+}
+
+.submit {
+    background-color: rgb(201, 255, 121);
+}
+
+.password {
+    position: relative;
+}
+
+.fa-eye {
+    position: absolute;
+    right: 3px;
+    top: 1px;
+}

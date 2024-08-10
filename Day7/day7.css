@@ -1,0 +1,23 @@
+body {
+    font-family: 'poppins';
+}
+
+.block {
+    font-size: 3rem;
+}
+
+.home-shop {
+    height: 316px;
+    background-image: url('Navbar/Group 3/home-shop.png');
+    background-size: cover;
+}
+
+.filter-button {
+    border: none;
+    background-color: transparent;
+}
+
+.filter {
+    padding: 41px 100px;
+    background-color: #F9F1E7;
+}

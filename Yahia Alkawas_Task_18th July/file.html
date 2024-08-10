@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./file.css">
+    </head>
+    <style>
+        input{
+            display: block;
+            margin: 10px 0px;
+            border-radius: 6px;    
+        }
+
+        button {
+            padding: 5px;
+            width: 166px;
+            border-radius: 6px;
+        }
+
+        .info {
+            display: none;
+            width: 300px;
+            height: 100px;
+            border: 3px dotted skyblue;
+            padding: 10px;
+            margin-top: 10px;
+        }
+    </style>
+    <body>
+        <form>
+            <h1>My Form</h1>
+            <label>First name</label>
+            <input id="fname" type="text">
+            <label>Last name</label>
+            <input id="lname" type="text">
+            <label>Birthdate</label>
+            <input name="birthdate" type="date" style="width: 166px;" onblur="calculateAge()">
+            <button type="button" id="submit">Display</button>
+        </form>
+        <div id="info">
+        </div>
+        <script>
+            let age;
+            function calculateAge(event) {
+                let birthDate = document.getElementsByName("birthdate")[0];
+                let birthYear = new Date(birthDate.value).getFullYear();
+                let currentYear = new Date().getFullYear();
+                age = currentYear - birthYear;
+                alert("Your age is: " + age);
+            }
+
+            const btn = document.getElementById('submit');
+            btn.addEventListener("click", displayInfo);            
+            function displayInfo() {
+                let firstName = document.getElementById('fname').value;
+                let lastName = document.getElementById('lname').value;
+                document.getElementById('info').style.display = "block";
+                document.getElementById('info').innerHTML += "Hello, My name is " + firstName + " " + lastName + " and my age is " + age;
+            }
+        </script>
+    </body>
+</html>

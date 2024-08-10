@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <title>CRUD Application</title>
+</head>
+<body>
+    <div class="cont">
+        <form id="user-form">
+            <label>First name</label>
+            <input type="text" id="first-name" placeholder="Enter first name">
+            <label>Last name</label>
+            <input type="text" id="last-name" placeholder="Enter last name">
+            <input type="hidden" id="user-index">
+            <button type="button" onclick="submitForm()">Submit</button>
+        </form>
+        <div id="users-list"></div>
+        <div id="entered-data"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

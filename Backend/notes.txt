@@ -1,0 +1,3 @@
+Composition: A book has papers.
+
+Inheritance: A car is a vehichle.

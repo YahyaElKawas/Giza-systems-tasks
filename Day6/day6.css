@@ -1,0 +1,54 @@
+body {
+    background-color: rgb(241, 243, 244);
+}
+
+
+.cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.card img{
+    width: 140px;
+    height: 140px;
+}
+
+.card {
+    background-color: white;
+    padding: 100px;
+    box-shadow: 0px 6px 13px rgba(109, 123, 137, 0.102);
+    border-radius: 10px;
+    text-align: center;
+}
+.login button {
+    background-color: #1dc690;
+    width: 100%;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 28px 0;
+    border-radius: 5px;
+    box-shadow: 0 13px 10px #6d7b891a;
+    padding: 10px 122px;
+    border: none;
+}
+
+.card hr {
+    margin: 20px 0px;
+    border: 1px solid rgb(237, 235, 235);
+}   
+
+.login p {
+    font-family: d;
+    font-size: large;
+}
+
+.change-language {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.fa-earth-americas {
+}
